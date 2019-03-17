@@ -10,6 +10,9 @@ var timer = setInterval(function(){
 },2000);
 */
 
+var myReadStream = fs.createReadStream(_dirname + './readme.txt');
+var myWriteStream = fs.createWriteStream(_dirname + './writeme.txt');
+
 
 function myfunction() {
   console.log('Inside my function');
